@@ -8,7 +8,9 @@ This project predicts insurance charges using the `insurance.csv` dataset, which
 - **Feature Importance**: `smoker_yes` (importance ~0.619) is the primary driver of charges, followed by `bmi` (~0.211) and `age` (~0.133).
 - **Practical Implication**: Smoking status is the most critical factor for insurance pricing, with BMI and age also significant.
 
-For detailed results, see the [Model Comparison Report](docs/report.md).
+For detailed results, see the [Model Comparison Report](docs/report.md). Additional references:
+- [Google Docs Report](https://docs.google.com/document/d/1cj_b_HI_4j5r-962Tb0kKuc0-SVa5Hfn05tLpbQ6iXI/edit?usp=sharing)
+- [Google Colab Notebook](https://colab.research.google.com/drive/1i3PZyLV0InEuxaax4wGQNY-5R3599u1_?usp=sharing)
 
 ## Repository Structure
 - `insurance_prediction.py`: Python script containing the code for data preprocessing, model training, evaluation, and analysis.
@@ -55,4 +57,6 @@ The script outputs:
 A detailed report is available in `docs/`.
 
 ## Results
-The best model, Random Forest (GridSearchCV), achieved a Test MSE of 20,666,560 and Test R² of 0.867. Smoking status (`smoker_yes`) was the most important feature, contributing 61.9% to predictions, followed by BMI (21.1%) and age (~13.3%). See the report (`docs/report.md`) for more details.
+The best model, Random Forest (GridSearchCV), achieved a Test MSE of 20,666,560 and Test R² of 0.867. Smoking status (`smoker_yes`) was the most important feature, contributing 61.9% to predictions, followed by BMI (21.1%) and age (~13.3%). See the report (`docs/report.md`) for more details. Additional references:
+- [Google Docs Report](https://docs.google.com/document/d/1cj_b_HI_4j5r-962Tb0kKuc0-SVa5Hfn05tLpbQ6iXI/edit?usp=sharing)
+- [Google Colab Notebook](https://colab.research.google.com/drive/1i3PZyLV0InEuxaax4wGQNY-5R3599u1_?usp=sharing)
