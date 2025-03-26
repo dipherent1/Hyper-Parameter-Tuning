@@ -40,16 +40,11 @@ cd <repository-name>
 The `insurance.csv` file should be in the `data/` directory. If not, place it there before running the script.
 
 ### Run the Script
-Execute the Python script in a Jupyter Notebook or Google Colab environment (as it uses `files.upload()` for data loading in Colab):
-```bash
-python insurance_prediction.py
-```
 
 If running in a local environment, modify the data loading section to read the file directly:
 ```python
 df = pd.read_csv('data/insurance.csv')
 ```
-and remove the `files.upload()` part.
 
 ### View Results
 The script outputs:
@@ -57,7 +52,7 @@ The script outputs:
 - Feature importance for the best model
 - Visualizations (bar plots for MSE, R², and feature importance)
 
-A detailed report is available in `docs/report.md`.
+A detailed report is available in `docs/`.
 
 ## Results
 The best model, Random Forest (GridSearchCV), achieved a Test MSE of 20,666,560 and Test R² of 0.867. Smoking status (`smoker_yes`) was the most important feature, contributing 61.9% to predictions, followed by BMI (21.1%) and age (~13.3%). See the report (`docs/report.md`) for more details.
